@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# AI crawlers / answer engines -- explicitly allowed so UNCOVr Media
+# can be cited in AI Overviews, ChatGPT, Perplexity, etc.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://uncovrmedia.com/sitemap.xml
