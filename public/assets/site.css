@@ -22,28 +22,6 @@ img { max-width: 100%; }
   --font-display: "Helvetica Now Display", "Inter Tight", Helvetica, Arial, sans-serif;
   --font-body: "Helvetica Now Display", "Inter Tight", Helvetica, Arial, sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --ink: #eef1f8;
-    --paper: #0a1220;
-    --panel: #101b2f;
-    --muted: #9fabc6;
-    --line: #22314d;
-    --btn-bg: #eef1f8;
-    --btn-fg: #0a1220;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --ink: #eef1f8;
-  --paper: #0a1220;
-  --panel: #101b2f;
-  --muted: #9fabc6;
-  --line: #22314d;
-  --btn-bg: #eef1f8;
-  --btn-fg: #0a1220;
-  color-scheme: dark;
-}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
