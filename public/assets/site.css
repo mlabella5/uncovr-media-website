@@ -319,3 +319,10 @@ a.case:hover .thumb .mg *, a.case:focus-visible .thumb .mg * { animation-play-st
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .sec-head h1 { font-size: clamp(30px, 5vw, 52px); line-height: 1.02; letter-spacing: -0.03em; max-width: 18ch; font-family: var(--font-display); font-weight: 700; margin: 0; text-wrap: balance; }
 .legal-note { margin-top: 12px; }
+@media (max-width: 800px) {
+  .nav { row-gap: 10px; padding-block: 12px 4px; }
+  .nav > .btn { display: none; }
+  .nav nav { width: 100%; }
+  .nav ul { flex-wrap: nowrap; justify-content: space-between; gap: 8px; }
+  .nav ul a { font-size: clamp(12.5px, 3.7vw, 15px); white-space: nowrap; }
+}
