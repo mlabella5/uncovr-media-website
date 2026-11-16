@@ -319,6 +319,8 @@ a.case:hover .thumb .mg *, a.case:focus-visible .thumb .mg * { animation-play-st
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .sec-head h1 { font-size: clamp(30px, 5vw, 52px); line-height: 1.02; letter-spacing: -0.03em; max-width: 18ch; font-family: var(--font-display); font-weight: 700; margin: 0; text-wrap: balance; }
 .legal-note { margin-top: 12px; }
+.logo-wall { will-change: transform; backface-visibility: hidden; }
+.logo-wall img { backface-visibility: hidden; }
 @media (max-width: 800px) {
   .nav { row-gap: 10px; padding-block: 12px 4px; }
   .nav > .btn { display: none; }
