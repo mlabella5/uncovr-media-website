@@ -306,6 +306,11 @@ a.case .more { display: block; margin-top: 18px; font-weight: 500; }
 /* play rules: case study pages play, cards play on hover or focus */
 .thumb .mg *, .mg.is-paused * { animation-play-state: paused !important; }
 a.case:hover .thumb .mg *, a.case:focus-visible .thumb .mg * { animation-play-state: running !important; }
+/* touch screens cannot hover: cards play while on screen (always, if the script did not run) */
+@media (hover: none) and (prefers-reduced-motion: no-preference) {
+  .thumb .mg * { animation-play-state: running !important; }
+  .mg-io .thumb:not(.in-view) .mg * { animation-play-state: paused !important; }
+}
 .case-page figcaption { display: flex; justify-content: space-between; align-items: center; gap: 12px 16px; flex-wrap: wrap; padding: 10px 12px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); }
 .case-page figcaption .copy { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) {
